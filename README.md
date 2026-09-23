@@ -2,10 +2,10 @@
 
 ## Miembros del grupo LX-XXX-X (sustituir)
 
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. Alberto Ortega, Iván
+1. Andújar Cruz, Juan Carlos
+1. Baselga Molina, Álvaro María
+1. Casero Calvo, Iván
 
 ## 1. Introducción al problema
 
