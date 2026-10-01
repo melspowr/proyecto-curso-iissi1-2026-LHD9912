@@ -1,4 +1,4 @@
-# Título Proyecto
+# Título Proyecto.
 
 ## Miembros del grupo LX-XXX-X (sustituir)
 
