@@ -19,6 +19,26 @@ El proyecto está principalmente orientado hacia los estudiantes, sin embargo se
 
 ## 3. Visión general del sistema
 
+- Gestionar carpetas: Como usuario de la aplicación quiero poder organizar mis lienzos mediante carpetas para obtener un mayor orden.
+
+- Permisos de edición: Como propietario de un lienzo, quiero ser capaz de añadir editores a mis documentos para que contribuyan a ellos de forma colaborativa.
+
+- Categorización de lienzos: Como propietario de un lienzo, quiero poder asignar categorías existentes o crear las mías propias para facilitar su posterior búsqueda.
+
+- División de un lienzo: Como editor de un lienzo quiero que los lienzos estén divididos en capas, con 1 capa por editor para evitar mezclar información entre editores
+
+- Herramientas de entrada: Como editor de un lienzo, quiero tener la opción de escribir tanto mediante trazos (pantalla táctil) como con teclado, para adaptarme a mi dispositivo.
+
+- Importación de multimedia: Como editor de un lienzo, quiero poder importar mis propias imágenes para enriquecer los apuntes y diferenciarlos.
+
+- Búsqueda: Como usuario de la aplicación, quiero poder buscar lienzos por nombre y categoría para encontrar rápidamente la información que necesito.
+
+- Valoraciones: Como usuario, quiero poder ver las valoraciones y comentarios de otros usuarios en los lienzos públicos para identificar los de mayor calidad.
+
+- Comentarios: Como usuario, quiero poder dejar comentarios en los apuntes de otros para sugerir cambios o correcciones.
+
+- Bifurcación: Como usuario, quiero poder crear copias de apuntes públicos existentes para editarlos a mi gusto sin alterar el original.
+
 ### 3.1. Requisitos generales
 
 ### 3.2. Usuarios del sistema
