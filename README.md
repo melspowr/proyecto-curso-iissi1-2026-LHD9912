@@ -42,6 +42,13 @@ El proyecto está principalmente orientado hacia los estudiantes, sin embargo se
 ### 3.1. Requisitos generales
 
 ### 3.2. Usuarios del sistema
+- Usuario registrado:  Personas que tienen acceso a la plataforma para crear sus propias carpetas, buscar lienzos públicos, editar su perfil y hacer forks de apuntes públicos de la comunidad.
+
+- Propietario / Administrador:  Es el creador original de un documento. Tiene el control total sobre ese lienzo, puede cambiar su privacidad (público/privado), eliminarlo, gestionar las categorías y asignar roles a otros usuarios como el de escritor (y el de lector en caso de que sea un lienzo privado).
+
+- Escritor / Editor:  Usuario perteneciente a un lienzo con permisos de modificación. Pueden añadir contenido (texto, trazos, imágenes) trabajando exclusivamente en su propia capa independiente. Además, tiene acceso al chat interno del lienzo para coordinarse con el propietario y otros editores.
+
+- Lector: Usuario que accede a un lienzo (público o mediante invitación) en modo de solo lectura. No puede cambiar el contenido del apunte ni participar en el chat de escritores, pero puede interactuar dejando comentarios y valorando el documento.
 
 ## 4. Catálogo de requisitos
 
@@ -74,9 +81,17 @@ para [razón]
 
 #### 4.1.2. Reglas de negocio
 
-##### R.N.01. Título regla negocio
+##### R.N.01. Control de escritura sobre el lienzo
 
-Descripción de la regla de negocio.
+El sistema debe validar que la acción de escritura esté bloqueada para todos aquellos usuarios que no cuenten con el rol de escritor en ese lienzo.
+
+##### R.N.02. Categorización obligatoria de los lienzos públicos
+
+Para garantizar que la plataforma de apuntes mantenga un orden óptimo en las búsquedas, todo lienzo público debe estar vinculado obligatoriamente a al menos una categoría. El sistema impedirá publicar un lienzo si no se le ha asignado una categoría válida.
+
+##### R.N.03. Control sobre las autovaloraciones
+
+El sistema no permitirá que el usuario creador (Propietario/Administrador) de un lienzo publique comentarios con valoración en su propio documento. Esto se hace para evitar que el autor infle artificialmente la nota de sus apuntes.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
