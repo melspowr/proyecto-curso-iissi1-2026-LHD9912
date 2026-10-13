@@ -9,7 +9,9 @@
 
 ## 1. Introducción al problema
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+Ante la privatización de recursos académicos como apuntes, esquemas, y otros documentos y debido a los abusivos precios o anuncios constantes, se busca crear una red de apuntes abiertos a todos los usuarios, con una mejor organización y reducción de anuncios, con el objetivo de tener una gran base de usuarios implementando un sistema donde crear tus propios lienzos y compartirlos con otros usuarios lectores o editores según conveniencia.
+
+El proyecto está principalmente orientado hacia los estudiantes, sin embargo se podría usar en entornos laborales, por lo que se permite la posibilidad de privatizar los lienzos y otorgar un espacio de trabajo más confidencial.
 
 ## 2. Glosario de términos
 
