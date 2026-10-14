@@ -66,6 +66,58 @@ para [razón]
 - Se debe aplicar la regla de negocio R.N.XX.
 - ...
 
+##### R.F.01. Información general de chats
+Como participante de un chat quiero consultar en los chats los participantes de este y el historial de mensajes con sus respectivas fechas y horas.
+
+
+
+##### R.F.02. Administración de lienzos
+Como administrador de un lienzo quiero poder consultar las carpetas donde están guardadas, las diferentes categorías atribuidas a mi lienzo y el tipo de usuario que accede a mi lienzo.
+	
+
+
+##### R.F.03. Datos personales
+Como usuario quiero poder consultar mis datos personales cuando lo necesite.
+
+
+
+
+##### R.F.04. Rango en el lienzo
+Como usuario quiero poder consultar quien es el propietario del lienzo y que permisos tengo.
+
+
+
+
+##### R.F.05. Comprensión lienzo
+Como usuario me gustaría poder ver la descripción del lienzo y la categoría para comprender mejor el tema que abarca.
+
+
+
+##### R.F.06.  Comparador comentarios
+Como lector de lienzos quiero poder ver mis comentarios y los de otros usuarios y ordenarlos por fecha.
+
+
+
+##### R.F.07. Relación comentarios-lienzo
+Como administrador, quiero ver la categoría de un lienzo junto a sus comentarios para moderar su contenido.
+
+
+
+##### R.F.08. Administración del chat
+Como administrador del chat, quiero ver la clase de usuario del que haya escrito un mensaje.
+
+
+
+##### R.F.09. Gestión carpetas personales
+Como usuario quiero ver cuántas carpetas tengo y cuál fue la primera de todas ellas.
+
+
+
+##### R.F.10. Valoración temporal de los lienzos
+Como administrador, quiero ver las fechas de los comentarios de un mismo usuario y ver un histórico de sus valoraciones.
+
+
+
 #### 4.1.1. Requisitos de información
 
 
