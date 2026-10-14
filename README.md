@@ -19,6 +19,8 @@ El proyecto está principalmente orientado hacia los estudiantes, sin embargo se
 
 ## 3. Visión general del sistema
 
+### 3.1. Requisitos generales
+
 - Gestionar carpetas: Como usuario de la aplicación quiero poder organizar mis lienzos mediante carpetas para obtener un mayor orden.
 
 - Permisos de edición: Como propietario de un lienzo, quiero ser capaz de añadir editores a mis documentos para que contribuyan a ellos de forma colaborativa.
@@ -38,8 +40,6 @@ El proyecto está principalmente orientado hacia los estudiantes, sin embargo se
 - Comentarios: Como usuario, quiero poder dejar comentarios en los apuntes de otros para sugerir cambios o correcciones.
 
 - Bifurcación: Como usuario, quiero poder crear copias de apuntes públicos existentes para editarlos a mi gusto sin alterar el original.
-
-### 3.1. Requisitos generales
 
 ### 3.2. Usuarios del sistema
 - Usuario registrado:  Personas que tienen acceso a la plataforma para crear sus propias carpetas, buscar lienzos públicos, editar su perfil y hacer forks de apuntes públicos de la comunidad.
@@ -117,7 +117,6 @@ Como administrador, quiero ver la categoría de un lienzo junto a sus comentario
 ##### R.F.08. Administración del chat
 Como administrador del chat, quiero ver la clase de usuario del que haya escrito un mensaje.
 
-
 **Prueba de aceptación**
 
 - Comprobar que el administrador del chat puede visualizar todos los mensajes enviados.
@@ -127,6 +126,7 @@ Como administrador del chat, quiero ver la clase de usuario del que haya escrito
 Como usuario quiero ver cuántas carpetas tengo y cuál fue la primera de todas ellas.
 
 **Prueba de aceptación**
+
 - Comprobar que el sistema muestra al usuario el recuento total de sus carpetas.
 - Verificar que se identifica y resalta cuál de todas las carpetas fue la primera en ser creada.
 
@@ -134,6 +134,7 @@ Como usuario quiero ver cuántas carpetas tengo y cuál fue la primera de todas 
 Como administrador, quiero ver las fechas de los comentarios de un mismo usuario y ver un histórico de sus valoraciones.
 
 **Prueba de aceptación**
+
 - Comprobar que el administrador puede ver los comentarios agrupados o filtrados por un mismo usuario.
 - Verificar que se muestran las fechas exactas de cada comentario para evaluar la progresión temporal.
 
