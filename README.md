@@ -15,7 +15,15 @@ El proyecto está principalmente orientado hacia los estudiantes, sin embargo se
 
 ## 2. Glosario de términos
 
-- Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+- Copyleft: naturaleza de las licencias que dan libertad al usuario. Estas licencias deben de coincidir con la definición de la asociación GNU: [https://www.gnu.org/philosophy/free-sw.html](https://www.gnu.org/philosophy/free-sw.html)
+
+- Servicio: el conjunto que ofrecemos, este incluye pero no se limita a: la página web, la aplicación y la base de datos.
+
+- Objetos: estos contenidos introducidos por los usuarios en un lienzo, esto incluye pero no se limita a: los trazos, imágenes, videos y documentos,
+
+- Lienzo: sección del servicio en el que se añaden los objetos.
+
+- Bifurcación: copia de un lienzo existente por parte de un usuario. Esta copia deberá de respetar las condiciones impuestas por la licencia del creador original.
 
 ## 3. Visión general del sistema
 
