@@ -79,6 +79,101 @@ para [razón]
 - Descripción de la segunda comprobación a realizar
 - ...
 
+##### R.I.01. Lienzo
+Como desarrollador de la aplicación necesito tener la siguiente información sobre los lienzos para una mayor organización:
+- Propietario
+- Fecha de creación.
+- Registro de cambios.
+- Categorías.
+- Valoración global//Compuesto.
+- Descripción.
+
+**Prueba de aceptación**
+- No se puede dejar en blanco la categoría.
+- El propietario da permisos de administrador a otra persona y da error.
+- Cada nueva modificación se almacena automáticamente en el registro de cambios.
+
+##### R.I.02. Mensaje 
+Como usuario quiero tener la siguiente información sobre los mensajes para mantener el control sobre los chats:
+- Contenido.
+- Tamaño.
+- Autoría.
+- Fecha y hora del envío.
+
+**Prueba de aceptación**
+- Se escribe un contenido con una cantidad de caracteres mayor del tamaño permitido y da error.
+- No se permite que la autoría cambie en ningún momento.
+
+##### R.I.03. Usuario
+Como desarrollador quiero escribir la siguiente información sobre los usuarios para poder mantenerlos todos identificados:
+- Nombre del usuario.
+- Correo del usuario.
+- Contraseña.
+
+**Prueba de aceptación**
+- Se intenta crear una cuenta con un correo ya registrado y da error.
+- El nombre y el correo deben ser únicos.
+- Se debe escribir la contraseña correctamente o no iniciará sesión.
+  
+##### R.I.04. Carpeta
+Como desarrollador quiero poder acceder a la siguiente información sobre mis carpetas para tener mis archivos más ordenados:
+- Nombre de la carpeta.
+- Fecha de creación.
+- Descripción.
+- El conjunto de lienzos que contiene.
+
+**Prueba de aceptación**
+- Se intenta crear una carpeta sin lienzos y da error.
+- La carpeta debe contener nombre para crearla.
+
+##### R.I.05. Comentario
+Como desarrollador quiero incluir la siguiente información sobre los comentarios para saber la opinión de las personas:
+- Contenido.
+- Emisor.
+- Fecha de los comentarios.
+
+**Prueba de aceptación**
+- Un comentario debe mantenerse aunque el emisor se haya borrado.
+- Intento mandar un mensaje y falla si no contiene nada.
+
+##### R.I.06. Rol
+Como desarrollador quiero saber lo siguiente sobre los roles para administrar lo que pueda hacer cada usuario:
+- Tipo del rol (Administrador,escritor,lector).
+- Permisos.
+
+**Prueba de aceptación**
+- El rol da error si no tiene permisos asignados.
+- No se le pueden asignar exactamente los mismos permisos a dos roles distintos.
+
+##### R.I.07. Chats
+Como desarrollador quiero acceder a la siguiente información sobre los chats para ser consciente de cómo está compuesto el chat:
+- Descripción.
+- Número integrantes.
+- Fecha de creación.
+
+**Prueba de aceptación**
+- Un chat debe contener por lo menos 2 integrantes.
+- Comprobar si la fecha de creación es posterior a la del lienzo.
+
+##### R.I.08. Categoría
+Como desarrollador quiero saber la siguiente información sobre la categoría para saber cómo catalogar mi lienzo:
+- Nombre.
+- Tamaño.
+
+**Prueba de aceptación**
+- La categoría se deja en blanco y da error ya que el tamaño es cero.
+- En el nombre se introducen caracteres que no son aceptados y los sustituye con una interrogación.
+
+##### R.I.09. Capa
+Como desarrollador quiero saber las siguientes propiedades de las capas para saber quién está aportando al lienzo:
+- Número de capa.
+- Fecha y hora de creación.
+		
+**Prueba de aceptación**
+- Me da error al intentar eliminar la capa base.
+- Una capa anterior no puede estar creada después de una posterior.
+
+
 #### 4.1.2. Reglas de negocio
 
 ##### R.N.01. Control de escritura sobre el lienzo
