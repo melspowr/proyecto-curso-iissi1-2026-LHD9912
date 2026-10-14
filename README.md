@@ -68,20 +68,10 @@ para [razón]
 
 #### 4.1.1. Requisitos de información
 
-##### R.I.01. Título requisito de información
-
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
-
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- ...
 
 ##### R.I.01. Lienzo
 Como desarrollador de la aplicación necesito tener la siguiente información sobre los lienzos para una mayor organización:
-- Propietario
+- Propietario.
 - Fecha de creación.
 - Registro de cambios.
 - Categorías.
