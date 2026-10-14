@@ -257,6 +257,14 @@ Para garantizar que la plataforma de apuntes mantenga un orden óptimo en las b�
 
 El sistema no permitirá que el usuario creador (Propietario/Administrador) de un lienzo publique comentarios con valoración en su propio documento. Esto se hace para evitar que el autor infle artificialmente la nota de sus apuntes.
 
+##### R.N.04. Eliminación de lienzos:
+
+Por la sanidad del servicio. La eliminación de una cuenta no implica la eliminación inmediata de sus creaciones ni contribuciones. En caso de querer eliminar una capa o lienzo, estos tendrán un temporizador de siete días hasta ser definitivamente eliminados, pudiendo ser bifurcados en ese proceso por otro usuario.
+
+##### R.N.05. Licencias:
+
+La plataforma tendrá un rango limitado de licencias permitidas. Todas ellas copyleft, asegurando la posibilidad de clonar un proyecto y contribuir.
+
 ### 4.2. Mapa de historias de usuario (opcional)
 
 ### 4.3. Requisitos no funcionales (opcional)
