@@ -1,6 +1,6 @@
 # Título Proyecto.
 
-## Miembros del grupo LX-XXX-X (sustituir)
+## Miembros del grupo L2-ABS-2
 
 1. Alberto Ortega, Iván
 1. Andújar Cruz, Juan Carlos
@@ -9,9 +9,11 @@
 
 ## 1. Introducción al problema
 
-Ante la privatización de recursos académicos como apuntes, esquemas, y otros documentos y debido a los abusivos precios o anuncios constantes, se busca crear una red de apuntes abiertos a todos los usuarios, con una mejor organización y reducción de anuncios, con el objetivo de tener una gran base de usuarios implementando un sistema donde crear tus propios lienzos y compartirlos con otros usuarios lectores o editores según conveniencia.
+Ante la privatización de recursos académicos como apuntes y esquemas entre otros documentos y debido a los abusivos precios de suscripciones o anuncios constantes, se busca crear una red de apuntes públicos y gratuitos, con una mejor organización y reducción de anuncios, con el objetivo de crear una gran base de usuarios activos atrayendolos gracias a las mejoras de calidad de vida en comparación a las alternativas y mediante la implementación distintiva de los lienzos, permitiendo dar rienda suelta a la creatividad a la hora de elaborar el material pertinente.
 
-El proyecto está principalmente orientado hacia los estudiantes, sin embargo se podría usar en entornos laborales, por lo que se permite la posibilidad de privatizar los lienzos y otorgar un espacio de trabajo más confidencial.
+La creación de los lienzos propios contaría con diversas formas de rellenarlos, aceptando una gran cantidad de formatos, desde texto introducido mediante teclado, el trazo con infinidad de opciones (texto, dibujos, esquemas, croquis con diferentes colores, tamaños y pinceles), las imágenes, los hipervínculos...  Siendo capaz de gestionar cada lienzo por capas, cada usuario dentro del lienzo por roles y permisos (editor, lector, etc...), organizarlos mediante el uso de carpetas personales o públicas y etiquetas para que el usuario pueda navegar con facilidad. Además de poder dejar comentarios para dar feedback a los creadores. Para asegurar una mejor experiencia, el usuario será capaz de copiar los lienzos existentes permitiendo esto la realización de cambios sobre ellos y asegurando así de que el material entra en las necesidades del usuario, obligando a mostrar en el lienzo bifurcado cual es su lienzo origen para dar crédito a los creadores originales.
+
+El proyecto está principalmente orientado hacia los estudiantes, sin embargo debido a la libertad de creación que suponen los lienzos buscamos la inclusión de entornos laborales más confidenciales, por lo que se permite la posibilidad de privatizar los lienzos y otorgar un espacio más íntimo. En el entorno académico se recomienda el uso de lienzos para trabajos grupales, con posibilidad de privatizar el lienzo, y colaboraciones a la hora de desarrollar apuntes ya que gracias al sistema de capas permite libertad propia y total a cada uno de los editores del lienzo, e incluso da la posibilidad a otros estudiantes fuera del grupo de trabajo a aportar ideas o correcciones gracias a los comentarios, contando además de las distintas herramientas de trabajo, haciendo a esta aplicación el mejor lugar para trabajar.
 
 ## 2. Glosario de términos
 
@@ -29,25 +31,14 @@ El proyecto está principalmente orientado hacia los estudiantes, sin embargo se
 
 ### 3.1. Requisitos generales
 
-- Gestionar carpetas: Como usuario de la aplicación quiero poder organizar mis lienzos mediante carpetas para obtener un mayor orden.
+- Gestión de lienzos: Como usuario de la aplicación quiero poder organizar lienzos en carpetas para un mayor orden, valorarlos, comentarlos, bifurcarse para aportar en futuras búsquedas, facilitar la lectura y edición de estos.
 
-- Permisos de edición: Como propietario de un lienzo, quiero ser capaz de añadir editores a mis documentos para que contribuyan a ellos de forma colaborativa.
+- Control sobre el lienzo: Como propietario de un lienzo, quiero ser el único capaz de gestionar los roles de mis documentos, añadir etiquetas, nombrarlos y privatizarlos, para particularizar mi lienzo.
 
-- Categorización de lienzos: Como propietario de un lienzo, quiero poder asignar categorías existentes o crear las mías propias para facilitar su posterior búsqueda.
+- Herramientas de entrada: Como editor de un lienzo, quiero tener la opción de escribir tanto mediante trazos, como con teclado además de poder importar imágenes, para adaptarme a mi dispositivo y enriquecer los apuntes.
 
-- División de un lienzo: Como editor de un lienzo quiero que los lienzos estén divididos en capas, con 1 capa por editor para evitar mezclar información entre editores
+- Búsqueda de lienzos: Como lector, quiero ser capaz de centrar mi búsqueda en base a las valoraciones, número de comentarios, etiquetas y la fecha de la última modificación de los lienzos, para encontrar el que más me convenga.
 
-- Herramientas de entrada: Como editor de un lienzo, quiero tener la opción de escribir tanto mediante trazos (pantalla táctil) como con teclado, para adaptarme a mi dispositivo.
-
-- Importación de multimedia: Como editor de un lienzo, quiero poder importar mis propias imágenes para enriquecer los apuntes y diferenciarlos.
-
-- Búsqueda: Como usuario de la aplicación, quiero poder buscar lienzos por nombre y categoría para encontrar rápidamente la información que necesito.
-
-- Valoraciones: Como usuario, quiero poder ver las valoraciones y comentarios de otros usuarios en los lienzos públicos para identificar los de mayor calidad.
-
-- Comentarios: Como usuario, quiero poder dejar comentarios en los apuntes de otros para sugerir cambios o correcciones.
-
-- Bifurcación: Como usuario, quiero poder crear copias de apuntes públicos existentes para editarlos a mi gusto sin alterar el original.
 
 ### 3.2. Usuarios del sistema
 - Usuario registrado:  Personas que tienen acceso a la plataforma para crear sus propias carpetas, buscar lienzos públicos, editar su perfil y hacer forks de apuntes públicos de la comunidad.
