@@ -53,7 +53,7 @@ El proyecto está principalmente orientado hacia los estudiantes, sin embargo de
 
 ### 4.1. Requisitos funcionales
 
-##### R.F.01. Información general de chats
+##### R.F.01. Consultar información de chats
 Como participante de un chat quiero consultar en los chats los participantes de este y el historial de mensajes con sus respectivas fechas y horas.
 
 **Prueba de aceptación**
@@ -61,7 +61,7 @@ Como participante de un chat quiero consultar en los chats los participantes de 
 - Comprobar que el usuario puede visualizar la lista completa de los participantes del chat.
 - Verificar que el historial de mensajes se muestra correctamente junto con la fecha y hora exacta de cada envío.
 
-##### R.F.02. Administración de lienzos
+##### R.F.02. Administrar lienzos
 Como administrador de un lienzo quiero poder consultar las carpetas donde están guardadas, las diferentes categorías atribuidas a mi lienzo y el tipo de usuario que accede a mi lienzo.
 	
 **Prueba de aceptación**
@@ -71,7 +71,7 @@ Como administrador de un lienzo quiero poder consultar las carpetas donde están
 - Comprobar que se lista correctamente el tipo de usuario (roles) que tiene acceso al lienzo.
 - Se debe aplicar la regla de negocio R.N.01.
 
-##### R.F.03. Datos personales
+##### R.F.03. Consultar datos personales
 Como usuario quiero poder consultar mis datos personales cuando lo necesite.
 
 **Prueba de aceptación**
@@ -79,7 +79,7 @@ Como usuario quiero poder consultar mis datos personales cuando lo necesite.
 - Comprobar que el usuario puede acceder a la sección de consulta de sus datos.
 - Verificar que la información mostrada corresponde fielmente a los datos personales registrados por el usuario.
 
-##### R.F.04. Rango en el lienzo
+##### R.F.04. Consultar rango en el lienzo
 Como usuario quiero poder consultar quien es el propietario del lienzo y que permisos tengo.
 
 **Prueba de aceptación**
@@ -89,7 +89,7 @@ Como usuario quiero poder consultar quien es el propietario del lienzo y que per
 - Se debe aplicar la regla de negocio R.N.01.
 - Se debe aplicar la regla de negocio R.N.02.
 
-##### R.F.05. Comprensión lienzo
+##### R.F.05. Consultar información del lienzo
 Como usuario me gustaría poder ver la descripción del lienzo y la categoría para comprender mejor el tema que abarca.
 
 **Prueba de aceptación**
@@ -97,7 +97,7 @@ Como usuario me gustaría poder ver la descripción del lienzo y la categoría p
 - Comprobar que la descripción detallada del lienzo es visible para el usuario.
 - Verificar que se muestra la categoría a la que pertenece el documento.
 
-##### R.F.06.  Comparador comentarios
+##### R.F.06.  Comparar comentarios
 Como lector de lienzos quiero poder ver mis comentarios y los de otros usuarios y ordenarlos por fecha.
 
 **Prueba de aceptación**
@@ -105,7 +105,7 @@ Como lector de lienzos quiero poder ver mis comentarios y los de otros usuarios 
 - Comprobar que el usuario puede visualizar sus propios comentarios en el lienzo.
 - Verificar que el sistema filtra y muestra los comentarios de otros usuarios que tengan una diferencia de publicación menor a una semana.
 
-##### R.F.07. Relación comentarios-lienzo
+##### R.F.07. Consultar relación comentarios-lienzo
 Como administrador, quiero ver la categoría de un lienzo junto a sus comentarios para moderar su contenido.
 
 **Prueba de aceptación**
@@ -113,7 +113,7 @@ Como administrador, quiero ver la categoría de un lienzo junto a sus comentario
 - Comprobar que el administrador puede visualizar la categoría a la que pertenece el lienzo.
 - Verificar que los comentarios de los lectores son visibles junto a esta información para permitir al administrador comprobar su relación con el contexto.
 
-##### R.F.08. Administración del chat
+##### R.F.08. Administrar el chat
 Como administrador del chat, quiero ver la clase de usuario del que haya escrito un mensaje.
 
 **Prueba de aceptación**
@@ -121,7 +121,7 @@ Como administrador del chat, quiero ver la clase de usuario del que haya escrito
 - Comprobar que el administrador del chat puede visualizar todos los mensajes enviados.
 - Verificar que junto a cada mensaje se indica claramente la clase o rol del usuario que lo ha escrito.
 
-##### R.F.09. Gestión carpetas personales
+##### R.F.09. Gestionar carpetas personales
 Como usuario quiero ver cuántas carpetas tengo y cuál fue la primera de todas ellas.
 
 **Prueba de aceptación**
@@ -129,7 +129,7 @@ Como usuario quiero ver cuántas carpetas tengo y cuál fue la primera de todas 
 - Comprobar que el sistema muestra al usuario el recuento total de sus carpetas.
 - Verificar que se identifica y resalta cuál de todas las carpetas fue la primera en ser creada.
 
-##### R.F.10. Valoración temporal de los lienzos
+##### R.F.10. Valorar los lienzos temporalmente
 Como administrador, quiero ver las fechas de los comentarios de un mismo usuario y ver un histórico de sus valoraciones.
 
 **Prueba de aceptación**
@@ -149,9 +149,9 @@ Como desarrollador de la aplicación necesito tener la siguiente información so
 - Descripción.
 
 **Prueba de aceptación**
-- No se puede dejar en blanco la categoría.
+- Se deja una categoría en blanco y falla.
 - El propietario da permisos de administrador a otra persona y da error.
-- Cada nueva modificación se almacena automáticamente en el registro de cambios.
+- Se realiza una modificación y se almacena automáticamente en el registro de cambios.
 
 ##### R.I.02. Mensaje 
 Como usuario quiero tener la siguiente información sobre los mensajes para mantener el control sobre los chats:
@@ -162,7 +162,7 @@ Como usuario quiero tener la siguiente información sobre los mensajes para mant
 
 **Prueba de aceptación**
 - Se escribe un contenido con una cantidad de caracteres mayor del tamaño permitido y da error.
-- No se permite que la autoría cambie en ningún momento.
+- Escribo un contenido en el mensaje con un tamaño dentro del límite y se envía correctamente.
 
 ##### R.I.03. Usuario
 Como desarrollador quiero escribir la siguiente información sobre los usuarios para poder mantenerlos todos identificados:
@@ -172,7 +172,7 @@ Como desarrollador quiero escribir la siguiente información sobre los usuarios 
 
 **Prueba de aceptación**
 - Se intenta crear una cuenta con un correo ya registrado y da error.
-- El nombre y el correo deben ser únicos.
+- Se inicia sesión con un correo y una contraseña correcta y accedes a tu cuenta.
 - Se debe escribir la contraseña correctamente o no iniciará sesión.
   
 ##### R.I.04. Carpeta
@@ -184,7 +184,7 @@ Como desarrollador quiero poder acceder a la siguiente información sobre mis ca
 
 **Prueba de aceptación**
 - Se intenta crear una carpeta sin lienzos y da error.
-- La carpeta debe contener nombre para crearla.
+- Se crea una nueva carpeta correctamente al añadir un lienzo y asignarle un nombre.
 
 ##### R.I.05. Comentario
 Como desarrollador quiero incluir la siguiente información sobre los comentarios para saber la opinión de las personas:
@@ -195,14 +195,14 @@ Como desarrollador quiero incluir la siguiente información sobre los comentario
 **Prueba de aceptación**
 - Un comentario debe mantenerse aunque el emisor se haya borrado.
 - Intento mandar un mensaje y falla si no contiene nada.
+- Mando un mensaje a una hora y el receptor lo recibe al momento.
 
 ##### R.I.06. Rol
 Como desarrollador quiero saber lo siguiente sobre los roles para administrar lo que pueda hacer cada usuario:
 - Tipo del rol (Administrador,escritor,lector).
-- Permisos.
 
 **Prueba de aceptación**
-- El rol da error si no tiene permisos asignados.
+- Se añade un usuario al lienzo con un tipo de rol y se le asignan automáticamente los permisos.
 - No se le pueden asignar exactamente los mismos permisos a dos roles distintos.
 
 ##### R.I.07. Chats
@@ -212,8 +212,8 @@ Como desarrollador quiero acceder a la siguiente información sobre los chats pa
 - Fecha de creación.
 
 **Prueba de aceptación**
-- Un chat debe contener por lo menos 2 integrantes.
-- Comprobar si la fecha de creación es posterior a la del lienzo.
+- El chat se crea nada más se crea el lienzo.
+- Se intenta modificar el chat sin ser el propietario y da error.
 
 ##### R.I.08. Categoría
 Como desarrollador quiero saber la siguiente información sobre la categoría para saber cómo catalogar mi lienzo:
@@ -231,7 +231,7 @@ Como desarrollador quiero saber las siguientes propiedades de las capas para sab
 		
 **Prueba de aceptación**
 - Me da error al intentar eliminar la capa base.
-- Una capa anterior no puede estar creada después de una posterior.
+- Las capas se van creando de forma ordenada y posterior a la creación de la anterior.
 
 
 #### 4.1.2. Reglas de negocio
