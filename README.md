@@ -144,7 +144,7 @@ Como desarrollador de la aplicación necesito tener la siguiente información so
 - Fecha de creación.
 - Registro de cambios.
 - Valoración global//Compuesto.
-- Descripción.
+- Nombre.
 
 **Prueba de aceptación**
 - Se deja una categoría en blanco y falla.
