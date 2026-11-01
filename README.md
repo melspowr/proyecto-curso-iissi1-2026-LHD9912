@@ -141,10 +141,8 @@ Como administrador, quiero ver las fechas de los comentarios de un mismo usuario
 
 ##### R.I.01. Lienzo
 Como desarrollador de la aplicación necesito tener la siguiente información sobre los lienzos para una mayor organización:
-- Propietario.
 - Fecha de creación.
 - Registro de cambios.
-- Categorías.
 - Valoración global//Compuesto.
 - Descripción.
 
@@ -156,7 +154,6 @@ Como desarrollador de la aplicación necesito tener la siguiente información so
 ##### R.I.02. Mensaje 
 Como usuario quiero tener la siguiente información sobre los mensajes para mantener el control sobre los chats:
 - Contenido.
-- Tamaño.
 - Autoría.
 - Fecha y hora del envío.
 
@@ -180,7 +177,6 @@ Como desarrollador quiero poder acceder a la siguiente información sobre mis ca
 - Nombre de la carpeta.
 - Fecha de creación.
 - Descripción.
-- El conjunto de lienzos que contiene.
 
 **Prueba de aceptación**
 - Se intenta crear una carpeta sin lienzos y da error.
@@ -189,7 +185,6 @@ Como desarrollador quiero poder acceder a la siguiente información sobre mis ca
 ##### R.I.05. Comentario
 Como desarrollador quiero incluir la siguiente información sobre los comentarios para saber la opinión de las personas:
 - Contenido.
-- Emisor.
 - Fecha de los comentarios.
 
 **Prueba de aceptación**
@@ -199,13 +194,13 @@ Como desarrollador quiero incluir la siguiente información sobre los comentario
 
 ##### R.I.06. Rol
 Como desarrollador quiero saber lo siguiente sobre los roles para administrar lo que pueda hacer cada usuario:
-- Tipo del rol (Administrador,escritor,lector).
+- Tipo del rol (Escritor,lector).
 
 **Prueba de aceptación**
 - Se añade un usuario al lienzo con un tipo de rol y se le asignan automáticamente los permisos.
 - No se le pueden asignar exactamente los mismos permisos a dos roles distintos.
 
-##### R.I.07. Chats
+##### R.I.07. Chat
 Como desarrollador quiero acceder a la siguiente información sobre los chats para ser consciente de cómo está compuesto el chat:
 - Descripción.
 - Número integrantes.
@@ -218,7 +213,6 @@ Como desarrollador quiero acceder a la siguiente información sobre los chats pa
 ##### R.I.08. Categoría
 Como desarrollador quiero saber la siguiente información sobre la categoría para saber cómo catalogar mi lienzo:
 - Nombre.
-- Tamaño.
 
 **Prueba de aceptación**
 - La categoría se deja en blanco y da error ya que el tamaño es cero.
