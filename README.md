@@ -266,9 +266,20 @@ El sistema no permitirá que el usuario creador (Propietario/Administrador) de u
 
 Por la sanidad del servicio. La eliminación de una cuenta no implica la eliminación inmediata de sus creaciones ni contribuciones. En caso de querer eliminar una capa o lienzo, estos tendrán un temporizador de siete días hasta ser definitivamente eliminados, pudiendo ser bifurcados en ese proceso por otro usuario.
 
+**Prueba de aceptacion**
+
+- Tratar de eliminar un lienzo que ya está en este proceso semanal da error, y esta acción no debe haber realizado cambios en el temporizador.
+
+- La interacción de eliminar una capa, pone a la misma en un purgatorio de 7 días antes de ser eliminada.
+
 ##### R.N.05. Licencias:
 
 La plataforma tendrá un rango limitado de licencias permitidas. Todas ellas copyleft, asegurando la posibilidad de clonar un proyecto y contribuir.
+
+- La colocación de una licencia desconocida debe de dar error, y dar la opción de enviar dicha licencia a los administradores del servicio.
+
+- La licencia está registrada en la base de datos como permitida y el lienzo se publica.
+
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
