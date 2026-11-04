@@ -401,6 +401,34 @@ Continuación de la tabla anterior:
 | RN-5   |               |                |           |       |           |                |                  |              |          |
 
 
+- Matriz de trazabilidad entre los requisitos funcionales y los elementos del modelo conceptual:
+
+|	| Lienzo | Mensaje | Usuario | Carpeta | Comentario | Rol | Chat | Categoría | Capa | R.1.Tamaño del texto | R.2.Dueño único |
+|:------|:------ |:--------|:--------|:--------|:-----------|:----|:-----|:----------|:-----|:---------------------|:----------------|
+| RF-1	|	 | X       | X       | 	       |            |     | X    |           |      | X                    |                 |
+| RF-2	| X      |         | X       | X       |            | X   |      | X         | X    |                      |                 |
+| RF-3	|        |         | X       |         |            |     |      |           |      |                      |                 |
+| RF-4	| X      |         | X       |         |            | X   |      |           |      |                      | X               |
+| RF-5	| X      |         |         |         |            |     |      | X         |      |                      |                 |
+| RF-6	| X      |         | X       |         | X          |     |      |           |      |                      |                 |
+| RF-7	| X      |         |         |         | X          |     |      | X         |      |                      |                 |
+| RF-8	|        |         | X       |         |            | X   | X    |           |      |                      |                 |
+| RF-9	|        |         |         | X       |            |     |      |           |      |                      |                 |
+| RF-10	|        | X       | X       |         |            |     |      |           |      |                      |                 |
+
+|        | Es gestionada | Forma parte de | Participa | Emite | Pertenece | Es guardado en | Es encontrado en | Es contenido | Contiene |
+|:-------|:--------------|:---------------|:----------|:------|:----------|:---------------|:-----------------|:-------------|:---------|
+| RF-1   |               | X              | X         |       |           |                |                  |              |          |
+| RF-2   | X             |                | X         |       |           |                |                  |              |          |
+| RF-3   |               |                |           | X     |           |                |                  |              |          |
+| RF-4   | X             |                |           |       |           |                |                  |              |          |
+| RF-5   | X             |                | X         |       |           |                |                  |              |          |
+| RF-6   |               | X              |           |       |           |                |                  | X            |          |
+| RF-7   |               |                |           |       |           |                |                  |              |          |
+| RF-8   | X             | X              |           |       | X         |                |                  |              |          |
+| RF-9   |               |                |           |       |           |                |                  |              |          |
+| RF-10  |               |                | X         |       |           |                |                  |              |          |
+
 
 
 
