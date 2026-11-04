@@ -265,6 +265,7 @@ para [razón]
 ## 5. Modelo conceptual
 
 ### 5.1. Diagramas de clases UML
+
 ![image alt](https://github.com/melspowr/proyecto-curso-iissi1-2026-LHD9912/blob/1c7330756cddca62d21f678f27a94063411b4b15/Modelo%20Conceputal%20ISSI.jpg)
 
 ### 5.2. Escenarios de prueba
@@ -295,9 +296,12 @@ r2: Rol (tipoRol: Propietario) asociado a Lienzo y a Usuario
 c2: Categoria (nombre: null)
 
 Imagen de las relaciones previas al cambio
+
 ![image alt](https://github.com/melspowr/proyecto-curso-iissi1-2026-LHD9912/blob/1c7330756cddca62d21f678f27a94063411b4b15/EP2.1.jpg)
 
+
 Imagen de las relaciones post cambio
+
 ![image alt](https://github.com/melspowr/proyecto-curso-iissi1-2026-LHD9912/blob/1c7330756cddca62d21f678f27a94063411b4b15/EP2.2.jpg)
 
 ##### ESCENARIO DE PRUEBA EP-03: Lector organiza y valora
