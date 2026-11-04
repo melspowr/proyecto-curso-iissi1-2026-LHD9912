@@ -416,6 +416,8 @@ Continuación de la tabla anterior:
 | RF-9	|        |         |         | X       |            |     |      |           |      |                      |                 |
 | RF-10	|        | X       | X       |         |            |     |      |           |      |                      |                 |
 
+Continuación de la tabla anterior:
+
 |        | Es gestionada | Forma parte de | Participa | Emite | Pertenece | Es guardado en | Es encontrado en | Es contenido | Contiene |
 |:-------|:--------------|:---------------|:----------|:------|:----------|:---------------|:-----------------|:-------------|:---------|
 | RF-1   |               | X              | X         |       |           |                |                  |              |          |
