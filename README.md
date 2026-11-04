@@ -277,10 +277,10 @@ Para comprobar el modelo, se presentan los siguientes escenarios con sus respect
 **Descripción textual:** El usuario Melo accede al lienzo que quiere editar. Posteriormente accede a este lienzo donde su rol es de editor y realiza un cambio en su respectiva capa. El sistema valida que Melo es editor dentro del lienzo, además de validar que dentro del mismo lienzo es propietario de la capa a editar y se permite la operación.
 
 **Objetos involucrados:**
-u1: Usuario (nombre="Melo", contraseña="contraseña1", correoElectronico="melspowr@yahoo.com")
-l1: Lienzo (fechaCreacion: 01/09/2026, valoracionGlobal: 4.5, nombre: "Apuntes recursividad", registroCambios: null)
-r1: Rol (tipoRol: Editor) vinculado a Lienzo y a Usuario
-c1: Capa (numeroCapa=2, fechaCreacion=05/09/2026)
+- u1: Usuario (nombre="Melo", contraseña="contraseña1", correoElectronico="melspowr@yahoo.com")
+- l1: Lienzo (fechaCreacion: 01/09/2026, valoracionGlobal: 4.5, nombre: "Apuntes recursividad", registroCambios: null)
+- r1: Rol (tipoRol: Editor) vinculado a Lienzo y a Usuario
+- c1: Capa (numeroCapa=2, fechaCreacion=05/09/2026)
 
 ![image alt](https://github.com/melspowr/proyecto-curso-iissi1-2026-LHD9912/blob/1c7330756cddca62d21f678f27a94063411b4b15/EP1.jpg)
 
@@ -290,10 +290,10 @@ c1: Capa (numeroCapa=2, fechaCreacion=05/09/2026)
 **Descripción textual:** El usuario Lu crea un lienzo. A continuación el sistema obliga al usuario a darle un nombre y a asignarle al menos 1 categoría al lienzo. El sistema valida que Lu es el propietario del lienzo y que el nombre y la categoría están permitidas y se permite la operación
 
 **Objetos involucrados:** 
-u2: Usuario (nombre="Lu", contraseña="contraseña2", correoElectronico="Lusilu@gmail.com")
-l2: Lienzo (fechaCreacion: 04/11/26, valoracionGlobal: null, nombre: null, registroCambios: null)
-r2: Rol (tipoRol: Propietario) asociado a Lienzo y a Usuario
-c2: Categoria (nombre: null)
+- u2: Usuario (nombre="Lu", contraseña="contraseña2", correoElectronico="Lusilu@gmail.com")
+- l2: Lienzo (fechaCreacion: 04/11/26, valoracionGlobal: null, nombre: null, registroCambios: null)
+- r2: Rol (tipoRol: Propietario) asociado a Lienzo y a Usuario
+- c2: Categoria (nombre: null)
 
 Imagen de las relaciones previas al cambio
 
@@ -310,11 +310,11 @@ Objetivo: Comprobar que un usuario (lector) puede comentar y guardar lienzos en 
 **Descripción textual:** El usuario Ivan accede como lector a un lienzo y procede a dejar un comentario sobre el mismo. El sistema valida que Ivan no es el propietario del lienzo ni un editor y que el comentario y valoración están permitidas y se permite la operación
 
 **Objetos involucrados:**
-u3: Usuario (nombre="Ivan", contraseña="contraseña3", correoElectronico="Darka17@gmail.com")
-l3: Lienzo (fechaCreacion:  01/11/26, valoracionGlobal: 3.5, nombre: "Modelado Conceptual paso a paso", registroCambios: null)
-r3: Rol (tipoRol: Lector) asociado a Lienzo y a Usuario
-cr3: Carpeta (nombre = "ISSI", fechaCreacion = 18/09/2026,descripción = "Apuntes, exámenes, ejercicios y modelos para el estudio")
-cm3: Comentario (contenido="Magníficos apuntes sobre el modelado conceptual, recomiendo hacer más hincapié en las relaciones entre entidades",fechaCreacion = 04/11/2026, valoración = 4.5 )
+- u3: Usuario (nombre="Ivan", contraseña="contraseña3", correoElectronico="Darka17@gmail.com")
+- l3: Lienzo (fechaCreacion:  01/11/26, valoracionGlobal: 3.5, nombre: "Modelado Conceptual paso a paso", registroCambios: null)
+- r3: Rol (tipoRol: Lector) asociado a Lienzo y a Usuario
+- cr3: Carpeta (nombre = "ISSI", fechaCreacion = 18/09/2026,descripción = "Apuntes, exámenes, ejercicios y modelos para el estudio")
+- cm3: Comentario (contenido="Magníficos apuntes sobre el modelado conceptual, recomiendo hacer más hincapié en las relaciones entre entidades",fechaCreacion = 04/11/2026, valoración = 4.5 )
 
 ![image alt](https://github.com/melspowr/proyecto-curso-iissi1-2026-LHD9912/blob/1c7330756cddca62d21f678f27a94063411b4b15/EP3.jpg)
 
