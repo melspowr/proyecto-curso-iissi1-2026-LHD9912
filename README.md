@@ -186,6 +186,7 @@ Como desarrollador quiero poder acceder a la siguiente información sobre mis ca
 Como desarrollador quiero incluir la siguiente información sobre los comentarios para saber la opinión de las personas:
 - Contenido.
 - Fecha de los comentarios.
+- Valoración.
 
 **Prueba de aceptación**
 - Un comentario debe mantenerse aunque el emisor se haya borrado.
@@ -245,20 +246,10 @@ El sistema no permitirá que el usuario creador (Propietario/Administrador) de u
 ##### R.N.04. Eliminación de lienzos:
 
 Por la sanidad del servicio. La eliminación de una cuenta no implica la eliminación inmediata de sus creaciones ni contribuciones. En caso de querer eliminar una capa o lienzo, estos tendrán un temporizador de siete días hasta ser definitivamente eliminados, pudiendo ser bifurcados en ese proceso por otro usuario.
-- Prueba de aceptación
-
-> - Tratar de eliminar un lienzo que ya está en este proceso semanal da error y no debe haber realizado cambios en el temporizador.
->
-> - La interacción de eliminar una capa, pone a la misma en un purgatorio de 7 días antes de ser eliminada.
 
 ##### R.N.05. Licencias:
 
 La plataforma tendrá un rango limitado de licencias permitidas. Todas ellas copyleft, asegurando la posibilidad de clonar un proyecto y contribuir.
-- Prueba de aceptación
-
-> - La colocación de una licencia desconocida debe de dar error, y dar la opción de enviar dicha licencia a los administradores del servicio.
->
-> - La licencia está registrada en la base de datos como permitida y el lienzo se publica.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
@@ -283,17 +274,34 @@ para [razón]
 
 ## 6. Matrices de trazabilidad
 
-- Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
+- Matriz de trazabilidad entre los requisitos de información y los elementos del modelo conceptual:
 
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1  | X          | X          | X          | X          |
-| RI-2  |            | X          |            | X          |
-| RF-1  |            | X          |            | X          |
-| RF-2  | X          |            | X          | X          |
-| RN-1  |            | X          |            |            |
-| RN-2  | X          | X          | X          |            |
-| ...   |            |            |            |            |
+|        | Lienzo | Mensaje | Usuario | Carpeta | Comentario | Rol | Chat | Categoría | Capa | R.1.Tamaño del texto | R.2.Dueño único |
+|:-------|:-------|:--------|:--------|:--------|:-----------|:----|:-----|:----------|:-----|:---------------------|:----------------|
+| RI-1   | X      |         | X       | X       | X          | X   | X    | X         | X    |                      | X               |
+| RI-2   |        | X       |         |         |            |     | X    |           |      | X                    |                 |
+| RI-3   | X      |         | X       |         | X          | X   |      |           | X    |                      |                 |
+| RI-4   | X      |         |         | X       |            |     |      |           |      |                      |                 |
+| RI-5   | X      |         | X       |         | X          |     |      |           |      |                      |                 |
+| RI-6   | X      |         | X       |         |            | X   |      |           |      |                      |                 |
+| RI-7   | X      | X       |         |         |            |     | X    |           |      |                      |                 |
+| RI-8	 | X  	  |		    |	      |		    |            |     |      | X         |      | X                    |                 |
+| RI-9   | X  	  |	        | X       |		    |            |     |      |           | X    |                      |                 |
+
+Continuación de la tabla anterior:
+
+|        | Es gestionada | Forma parte de | Participa | Emite | Pertenece | Es guardado en | Es encontrado en | Es contenido | Contiene |
+|:-------|:--------------|:---------------|:----------|:------|:----------|:---------------|:-----------------|:-------------|:---------|
+| RI-1   |               | X              | X         |       | X         | X              | X                | X            |          |
+| RI-2   |               |                |           |       |           |                |                  |              | X        |
+| RI-3   | X             |                | X         | X     |           |                |                  |              |          |
+| RI-4   |               |                |           |       |           | X              |                  |              |          |
+| RI-5   |               |                |           | X     | X         |                |                  |              |          |
+| RI-6   |               |                | X         |       |           |                |                  |              |          |
+| RI-7   |               |                |           |       |           |                |                  | X            | X        |
+| RI-8	 |               |                |           |       |           |                | X                |              |          |
+| RI-9   | X             | X              |           |       |           |                |                  |              |          |
+
 
 -- fin entregable 2 --
 
