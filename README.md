@@ -238,9 +238,9 @@ El sistema debe validar que la acción de escritura esté bloqueada para todos a
 
 **Prueba de aceptación**
 
--Melo, que tiene el rol de escritor en el lienzo "Apuntes recursividad", añade un trazo en su capa y el sistema permite la operación, guardándola en el registro de cambios.
+- Melo, que tiene el rol de escritor en el lienzo "Apuntes recursividad", añade un trazo en su capa y el sistema permite la operación, guardándola en el registro de cambios.
 
--Ivan, que tiene el rol de lector en el lienzo "Modelado Conceptual paso a paso", intenta añadir texto en el lienzo y el sistema bloquea la escritura mostrando un error, sin modificar el lienzo.
+- Ivan, que tiene el rol de lector en el lienzo "Modelado Conceptual paso a paso", intenta añadir texto en el lienzo y el sistema bloquea la escritura mostrando un error, sin modificar el lienzo.
 
 ##### R.N.02. Categorización obligatoria de los lienzos públicos
 
@@ -248,9 +248,9 @@ Para garantizar que la plataforma de apuntes mantenga un orden óptimo en las b�
 
 **Prueba de aceptación**
 
--Lu asigna la categoría "Programación" a su lienzo y lo publica como público, el sistema valida que tiene al menos una categoría válida y permite la publicación.
+- Lu asigna la categoría "Programación" a su lienzo y lo publica como público, el sistema valida que tiene al menos una categoría válida y permite la publicación.
 
--Lu intenta publicar como público un lienzo sin ninguna categoría asignada y el sistema impide la publicación mostrando un error, quedando el lienzo como privado.
+- Lu intenta publicar como público un lienzo sin ninguna categoría asignada y el sistema impide la publicación mostrando un error, quedando el lienzo como privado.
 
 ##### R.N.03. Control sobre las autovaloraciones
 
@@ -258,9 +258,9 @@ El sistema no permitirá que el usuario creador (Propietario/Administrador) de u
 
 **Prueba de aceptación**
 
--Ivan, que no es el propietario del lienzo "Modelado Conceptual paso a paso", publica un comentario con valoración 4.5 y el sistema lo guarda y recalcula la valoración global del lienzo.
+- Ivan, que no es el propietario del lienzo "Modelado Conceptual paso a paso", publica un comentario con valoración 4.5 y el sistema lo guarda y recalcula la valoración global del lienzo.
 
--Lu, que es la propietaria de su lienzo, intenta publicar en él un comentario con valoración 5 y el sistema lo rechaza mostrando un error, sin guardar el comentario ni modificar la valoración global.
+- Lu, que es la propietaria de su lienzo, intenta publicar en él un comentario con valoración 5 y el sistema lo rechaza mostrando un error, sin guardar el comentario ni modificar la valoración global.
 
 ##### R.N.04. Eliminación de lienzos:
 
@@ -285,7 +285,7 @@ para [razón]
 
 ### 5.1. Diagramas de clases UML
 
-![image alt](https://github.com/melspowr/proyecto-curso-iissi1-2026-LHD9912/blob/1c7330756cddca62d21f678f27a94063411b4b15/Modelo%20Conceputal%20ISSI.jpg)
+![image alt](https://github.com/melspowr/proyecto-curso-iissi1-2026-LHD9912/blob/b28e82d4866b153fc101e009e6cc454c61ee229a/Modelo%20Conceputal%20ISSI.jpg)
 
 ### 5.2. Escenarios de prueba
 Para comprobar el modelo, se presentan los siguientes escenarios con sus respectivos diagramas de objetos
