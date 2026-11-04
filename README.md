@@ -11,7 +11,7 @@
 
 Ante la privatización de recursos académicos como apuntes y esquemas entre otros documentos y debido a los abusivos precios de suscripciones o anuncios constantes, se busca crear una red de apuntes públicos y gratuitos, con una mejor organización y reducción de anuncios, con el objetivo de crear una gran base de usuarios activos atrayendolos gracias a las mejoras de calidad de vida en comparación a las alternativas y mediante la implementación distintiva de los lienzos, permitiendo dar rienda suelta a la creatividad a la hora de elaborar el material pertinente.
 
-La creación de los lienzos propios contaría con diversas formas de rellenarlos, aceptando una gran cantidad de formatos, desde texto introducido mediante teclado, el trazo con infinidad de opciones (texto, dibujos, esquemas, croquis con diferentes colores, tamaños y pinceles), las imágenes, los hipervínculos...  Siendo capaz de gestionar cada lienzo por capas, cada usuario dentro del lienzo por roles y permisos (editor, lector, etc...), organizarlos mediante el uso de carpetas personales o públicas y etiquetas para que el usuario pueda navegar con facilidad. Además de poder dejar comentarios para dar feedback a los creadores. Para asegurar una mejor experiencia, el usuario será capaz de copiar los lienzos existentes permitiendo esto la realización de cambios sobre ellos y asegurando así de que el material entra en las necesidades del usuario, obligando a mostrar en el lienzo bifurcado cual es su lienzo origen para dar crédito a los creadores originales.
+La creación de los lienzos propios contaría con diversas formas de rellenarlos, aceptando una gran cantidad de formatos, desde texto introducido mediante teclado, el trazo con infinidad de opciones (texto, dibujos, esquemas, croquis con diferentes colores, tamaños y pinceles), las imágenes, los hipervínculos...  Siendo capaz de gestionar cada lienzo por capas, cada usuario dentro del lienzo por roles (estos roles estarán organizados en forma de cascada, siendo el orden: propietario del lienzo, editor del lienzo y lector del lienzo, los permisos de cada rol contará los permisos de roles anteriores además de nuevos permisos, siendo estos roles propios de cada usuario en cada lienzo específico), organizarlos mediante el uso de carpetas personales o públicas y etiquetas para que el usuario pueda navegar con facilidad. Además de poder dejar comentarios para dar feedback a los creadores. Para asegurar una mejor experiencia, el usuario será capaz de copiar los lienzos existentes permitiendo esto la realización de cambios sobre ellos y asegurando así de que el material entra en las necesidades del usuario, obligando a mostrar en el lienzo bifurcado cual es su lienzo origen para dar crédito a los creadores originales.
 
 El proyecto está principalmente orientado hacia los estudiantes, sin embargo debido a la libertad de creación que suponen los lienzos buscamos la inclusión de entornos laborales más confidenciales, por lo que se permite la posibilidad de privatizar los lienzos y otorgar un espacio más íntimo. En el entorno académico se recomienda el uso de lienzos para trabajos grupales, con posibilidad de privatizar el lienzo, y colaboraciones a la hora de desarrollar apuntes ya que gracias al sistema de capas permite libertad propia y total a cada uno de los editores del lienzo, e incluso da la posibilidad a otros estudiantes fuera del grupo de trabajo a aportar ideas o correcciones gracias a los comentarios, contando además de las distintas herramientas de trabajo, haciendo a esta aplicación el mejor lugar para trabajar.
 
@@ -58,34 +58,33 @@ Como participante de un chat quiero consultar en los chats los participantes de 
 
 **Prueba de aceptación**
 
-- Comprobar que el usuario puede visualizar la lista completa de los participantes del chat.
-- Verificar que el historial de mensajes se muestra correctamente junto con la fecha y hora exacta de cada envío.
+- El participante accede al chat y es capaz de visualizar los distintos mensajes con sus respectivas fechas, horas y emisores.
+- El usuario intenta acceder al chat y es incapaz debido a que no es participante de este.
 
 ##### R.F.02. Administrar lienzos
-Como administrador de un lienzo quiero poder consultar las carpetas donde están guardadas, las diferentes categorías atribuidas a mi lienzo y el tipo de usuario que accede a mi lienzo.
+Como propietario de un lienzo quiero poder consultar las carpetas donde están guardadas, las diferentes categorías atribuidas a mi lienzo y el lista de usuarios que accede a mi lienzo junto con sus roles.
 	
 **Prueba de aceptación**
 
-- Comprobar que el administrador del lienzo puede ver la carpeta donde está ubicado el documento.
-- Verificar que se muestran en pantalla las distintas categorías atribuidas al lienzo.
-- Comprobar que se lista correctamente el tipo de usuario (roles) que tiene acceso al lienzo.
-- Se debe aplicar la regla de negocio R.N.01.
+- El propietario del lienzo accede al lienzo y este le muestra de forma separada las categorías asignadas al lienzo, y los usuarios del mismo. Una vez selecciona un usuario este es capaz de ver el nombre de la carpeta donde dicho usuario tiene guardado el lienzo.
+- El propietario no es capaz de ver la lista de usuarios que han accedido al lienzo debido a errores en el sistema.
+- El propietario no es capaz de ver la carpeta donde un usuario concreto guarada el lienzo debido a errores en el sistema.
 
 ##### R.F.03. Consultar datos personales
 Como usuario quiero poder consultar mis datos personales cuando lo necesite.
 
 **Prueba de aceptación**
 
-- Comprobar que el usuario puede acceder a la sección de consulta de sus datos.
-- Verificar que la información mostrada corresponde fielmente a los datos personales registrados por el usuario.
+- El usuario accede sin problema a la sección de consulta de sus datos.
+- El usuario es incapaz de acceder a sus datos personales debido a que no los ha rellenado.
 
 ##### R.F.04. Consultar rango en el lienzo
-Como usuario quiero poder consultar quien es el propietario del lienzo y que permisos tengo.
+Como usuario quiero poder consultar quien es el propietario del lienzo y que rol tengo.
 
 **Prueba de aceptación**
 
-- Comprobar que el usuario puede visualizar de forma clara quién es el propietario del lienzo.
-- Verificar que el sistema muestra los permisos específicos que el usuario activo tiene sobre ese lienzo.
+- El usuario accede a un lienzo y consulta el propietario y su propio rol dentro de este.
+- El usuario intenta acceder a un lienzo y es incapaz debido a que es un lienzo privado y no tiene el rol de editor dentro de ese lienzo.
 - Se debe aplicar la regla de negocio R.N.01.
 - Se debe aplicar la regla de negocio R.N.02.
 
@@ -94,48 +93,50 @@ Como usuario me gustaría poder ver la descripción del lienzo y la categoría p
 
 **Prueba de aceptación**
 
-- Comprobar que la descripción detallada del lienzo es visible para el usuario.
-- Verificar que se muestra la categoría a la que pertenece el documento.
+- EL usuario busca un lienzo y antes de acceder a el, le aparecen las categorías relacionadas a este y una breve descripción de este.
+- El usuario es incapaz de ver la categoría o la descripción que el propietario intento poner debido a que era muy larga o con caracteres desconocidos.
 
 ##### R.F.06.  Comparar comentarios
 Como lector de lienzos quiero poder ver mis comentarios y los de otros usuarios y ordenarlos por fecha.
 
 **Prueba de aceptación**
 
-- Comprobar que el usuario puede visualizar sus propios comentarios en el lienzo.
-- Verificar que el sistema filtra y muestra los comentarios de otros usuarios que tengan una diferencia de publicación menor a una semana.
+- El usuario accede al lienzo y dentro de este es capaz de visualizar todos los comentarios.
+- Una vez el usuario es capaz de visualizar los comentarios este los ordena por fecha ascente. 
+- El usuario es incapaz de acceder a los comentarios ya que no se ha publicado ninguno hasta el momento.
 
 ##### R.F.07. Consultar relación comentarios-lienzo
-Como administrador, quiero ver la categoría de un lienzo junto a sus comentarios para moderar su contenido.
+Como propietario de un lienzo, quiero ver sus categorías junto a sus comentarios para moderar su contenido.
 
 **Prueba de aceptación**
 
-- Comprobar que el administrador puede visualizar la categoría a la que pertenece el lienzo.
-- Verificar que los comentarios de los lectores son visibles junto a esta información para permitir al administrador comprobar su relación con el contexto.
+- El propietario accede al conjunto de categorías de su lienzo para ser capaz de añadir o eliminar categorías.
+- El propietario es capaz de acceder a los comentarios de su lienzo.
+- El usuario es incapaz de cambiar las categorías del lienzo ya que no es el propietario del mismo.
 
 ##### R.F.08. Administrar el chat
-Como administrador del chat, quiero ver la clase de usuario del que haya escrito un mensaje.
+Como propietario del lienzo, quiero ver la clase de usuario del que haya escrito un mensaje.
 
 **Prueba de aceptación**
 
-- Comprobar que el administrador del chat puede visualizar todos los mensajes enviados.
-- Verificar que junto a cada mensaje se indica claramente la clase o rol del usuario que lo ha escrito.
+- El propietario accede a los comentarios y le aparecen los distintos comentarios, el usuario y su rol dentro del lienzo.
+- El propietario es incapaz de acceder a los comentarios debido a la ausencia de estos.
 
 ##### R.F.09. Gestionar carpetas personales
 Como usuario quiero ver cuántas carpetas tengo y cuál fue la primera de todas ellas.
 
 **Prueba de aceptación**
 
-- Comprobar que el sistema muestra al usuario el recuento total de sus carpetas.
-- Verificar que se identifica y resalta cuál de todas las carpetas fue la primera en ser creada.
+- El usuario accede a su espacio personal donde organiza los distintos lienzos en carpetas y subcarpetas.
+- El usuario es incapaz de acceder a sus carpetas ya que no cuenta con ninguna y no ha guardado ningún lienzo en su espacio personal.
 
 ##### R.F.10. Valorar los lienzos temporalmente
-Como administrador, quiero ver las fechas de los comentarios de un mismo usuario y ver un histórico de sus valoraciones.
+Como usuario, quiero ver las fechas de los comentarios de un mismo usuario y ver un histórico de sus valoraciones en distintos lienzos.
 
 **Prueba de aceptación**
 
-- Comprobar que el administrador puede ver los comentarios agrupados o filtrados por un mismo usuario.
-- Verificar que se muestran las fechas exactas de cada comentario para evaluar la progresión temporal.
+- El usuario accede a la información especifica de otro usuario y es capaz de ver el historial de sus comentarios y valoraciones en lienzos publicos.
+- El usuarios es incapaz de acceder a la información de otro usuario ya que este no ha publicado ningún comentario.
 
 #### 4.1.1. Requisitos de información
 
